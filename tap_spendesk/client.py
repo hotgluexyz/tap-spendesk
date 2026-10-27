@@ -1,5 +1,6 @@
 """Company-scoped Spendesk reads with shared, renewable authentication."""
 
+import random
 import time
 from typing import ClassVar
 
@@ -18,8 +19,8 @@ class SpendeskClient:
         self.session = requests.Session()
         retry = Retry(
             total=5,
-            backoff_factor=1,
-            backoff_jitter=0.5,
+            # Per-client jitter also works with Hotglue's urllib3 1.26 runtime.
+            backoff_factor=random.uniform(1, 1.5),
             status_forcelist=[429, 500, 502, 503, 504],
             allowed_methods={"GET", "POST"},
             respect_retry_after_header=True,

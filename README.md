@@ -95,7 +95,8 @@ amortisation and Spendesk deep links. Dates and amounts are left in source forma
   retried. Downstream confirmed-response ID mappings must provide idempotency;
   extraction state is not confirmation of a successful Rillet write.
 - Reads/search/token acquisition retry 429 and transient 5xx responses up to five
-  retries, honoring `Retry-After` or exponential backoff with jitter.
+  retries, honoring `Retry-After` or exponential backoff with per-client jitter.
+  Both urllib3 1.26 (Hotglue's packaged runtime) and urllib3 2.x are supported.
 - Receipt 403/404 or an empty list does not block the payable. Inspect
   `attachments_status` (`available`, `missing`, `unavailable`, `not_requested`).
   Other attachment errors fail the run after retries. Download URLs during export:

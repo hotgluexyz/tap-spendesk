@@ -12,7 +12,7 @@ license = "MIT"
 [tool.poetry.dependencies]
 python = ">=3.10,<3.11"
 requests = "^2.25.1"
-urllib3 = ">=2.0,<3"
+urllib3 = ">=1.26,<3"
 hotglue-singer-sdk = "1.0.51"
 
 [build-system]
