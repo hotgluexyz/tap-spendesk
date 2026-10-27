@@ -1,0 +1,597 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "type": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "version": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "userId": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "bookkeepingStatus": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "companyId": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "appUrl": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "costCenterId": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "costCenterName": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "teamId": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "teamName": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "analyticalProperties": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": [
+          "null",
+          "object"
+        ],
+        "properties": {
+          "fieldId": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "fieldName": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "valueId": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "valueName": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "payableDate": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "accountingDate": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "invoiceDueDate": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "amount": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "currency": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "functionalAmount": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "functionalCurrency": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "functionalExchangeRate": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "outstandingAmount": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "outstandingFunctionalAmount": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "invoiceNumber": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "purchaseOrderNumber": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "creditNoteNumber": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "referenceInvoiceNumber": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "description": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "exportedAt": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "createdAt": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "commitmentCounterparty": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {
+        "type": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "name": {
+          "type": [
+            "null",
+            "string"
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "counterparty": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {
+        "id": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "type": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "name": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "accountPayable": {
+          "type": [
+            "null",
+            "object"
+          ],
+          "properties": {
+            "id": {
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            "generalAccountCode": {
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            "auxiliaryAccountCode": {
+              "type": [
+                "null",
+                "string"
+              ]
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "lineItems": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": [
+          "null",
+          "object"
+        ],
+        "properties": {
+          "expenseAccount": {
+            "type": [
+              "null",
+              "object"
+            ],
+            "properties": {
+              "id": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "code": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "description": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              }
+            },
+            "additionalProperties": true
+          },
+          "vatAccount": {
+            "type": [
+              "null",
+              "object"
+            ],
+            "properties": {
+              "id": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "code": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "rate": {
+                "type": [
+                  "null",
+                  "number"
+                ]
+              },
+              "description": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              }
+            },
+            "additionalProperties": true
+          },
+          "reverseChargeAccount": {
+            "type": [
+              "null",
+              "object"
+            ],
+            "properties": {
+              "id": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "creditCode": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "debitCode": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "description": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              }
+            },
+            "additionalProperties": true
+          },
+          "financial": {
+            "type": [
+              "null",
+              "object"
+            ],
+            "properties": {
+              "vatAmount": {
+                "type": [
+                  "null",
+                  "number"
+                ]
+              },
+              "vatAdjustmentAmount": {
+                "type": [
+                  "null",
+                  "number"
+                ]
+              },
+              "netAmount": {
+                "type": [
+                  "null",
+                  "number"
+                ]
+              },
+              "grossAmount": {
+                "type": [
+                  "null",
+                  "number"
+                ]
+              }
+            },
+            "additionalProperties": true
+          },
+          "costCenterId": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "costCenterName": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "analyticalProperties": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": [
+                "null",
+                "object"
+              ],
+              "properties": {
+                "fieldId": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "fieldName": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "valueId": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "valueName": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                }
+              },
+              "additionalProperties": true
+            }
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "allocations": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": [
+          "null",
+          "object"
+        ],
+        "properties": {
+          "type": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "allocatedAmount": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "settlementId": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "payableId": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "amortisation": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {
+        "date": {
+          "type": [
+            "null",
+            "object"
+          ],
+          "properties": {
+            "from": {
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            "to": {
+              "type": [
+                "null",
+                "string"
+              ]
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "export_ready": {
+      "type": "boolean"
+    },
+    "search_state": {
+      "type": "string"
+    },
+    "search_version": {
+      "type": "number"
+    },
+    "attachments_status": {
+      "type": "string"
+    },
+    "attachments": {
+      "type": "array",
+      "items": {
+        "type": [
+          "null",
+          "object"
+        ],
+        "properties": {
+          "mimeType": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "checksum": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "attachedAt": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "url": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

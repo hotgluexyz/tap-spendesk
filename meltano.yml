@@ -1,0 +1,29 @@
+send_anonymous_usage_stats: false
+project_id: tap-spendesk
+default_environment: test
+environments:
+- name: test
+plugins:
+  extractors:
+  - name: tap-spendesk
+    namespace: tap_spendesk
+    pip_url: -e .
+    capabilities: [state, catalog, discover, about, stream-maps]
+    settings:
+    - name: client_id
+      sensitive: true
+    - name: client_secret
+      sensitive: true
+    - name: company_id
+    - name: api_url
+      value: https://public-api.spendesk.com
+    - name: start_date
+      kind: date_iso8601
+    - name: include_attachments
+      kind: boolean
+      value: true
+    - name: include_unprepared
+      kind: boolean
+      value: false
+    settings_group_validation:
+    - [client_id, client_secret, company_id]

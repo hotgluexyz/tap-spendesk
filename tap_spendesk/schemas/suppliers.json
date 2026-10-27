@@ -1,0 +1,258 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "isArchived": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "externalIds": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": [
+          "null",
+          "object"
+        ],
+        "properties": {
+          "externalId": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "provider": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "source": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "accountPayable": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {
+        "id": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "generalAccountCode": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "auxiliaryAccountCode": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "externalId": {
+          "type": [
+            "null",
+            "string"
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "address": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {
+        "line1": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "line2": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "city": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "postalCode": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "stateOrCounty": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "country": {
+          "type": [
+            "null",
+            "string"
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "legalName": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "registrationNo": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "vatNo": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "createdAt": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "updatedAt": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "createdBy": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "updatedBy": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "bic": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "iban": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "bankCountry": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "bankDetailsUpdatedAt": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "bankDetailsUpdatedBy": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "bankInfo": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {
+        "iban": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "bic": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "bankCountry": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "accountNumber": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "routingNumber": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "sortCode": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "accountHolderName": {
+          "type": [
+            "null",
+            "string"
+          ]
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

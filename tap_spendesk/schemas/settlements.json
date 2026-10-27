@@ -1,0 +1,131 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "version": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "type": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "medium": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "paidFrom": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "transactionDescription": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "clearedAt": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "amount": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "currency": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "billingAmount": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "billingCurrency": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "billingExchangeRate": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "state": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "exportedAt": {
+      "type": [
+        "null",
+        "object",
+        "string"
+      ]
+    },
+    "statusUpdatedAt": {
+      "type": [
+        "null",
+        "object",
+        "string"
+      ]
+    },
+    "allocations": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": [
+          "null",
+          "object"
+        ],
+        "properties": {
+          "amount": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "currency": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "payableId": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}
